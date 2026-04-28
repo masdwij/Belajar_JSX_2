@@ -11,7 +11,13 @@ function Exercise(props) {
           User Cards
         </h1>
         <div className="grid md:grid-cols-5 lg:grid-cols-5 gap-6 max-w-5x3 mx-auto">
-          
+          <Postcard/>
+          <Postcard/>
+          <Postcard/>
+          <Postcard/>
+          <Postcard/>
+          <Postcard/>
+          <Postcard/>
         </div>
       </div>
     </>
