@@ -1,8 +1,8 @@
-import React , { useState }from "react"; 
+import React from "react"; 
 
 function Usercard(props) {
     const {name, email, street, city} = props;
-    const [clicked, setClicked] = useState(false);
+    const [clicked, setClicked] = React.useState(false);
 
   return (
     <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
@@ -13,7 +13,7 @@ function Usercard(props) {
       <p className="text-gray-600">
         <span className="font-medium">Address:</span> {street},{city}
       </p>
-      <button className={`${clicked ? "bg-special-green" : "bg-gray-01"} text-white p-2 rounded-md`} onClick={() => setClicked(true)}>
+      <button className={`${clicked ? "bg-red-500" : "bg-gray-01"} text-white p-2 rounded-md`} onClick={() => setClicked(true)}>
         {clicked ? "Tombol sudah diklik" : "Silakan Klik"}
        </button>
     </div>
